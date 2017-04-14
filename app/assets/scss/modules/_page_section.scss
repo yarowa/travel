@@ -1,0 +1,11 @@
+section{
+	padding: 1.2rem 0;
+	@add-mixin medium{
+		padding: 4.5rem 0;
+	}
+}
+
+.features{
+	background-color: $light-blue;
+	color: $white;
+}
