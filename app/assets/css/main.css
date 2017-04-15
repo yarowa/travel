@@ -350,6 +350,11 @@ template {
     display: table;
     height: 0;
     visibility: hidden; }
+.row > div {
+    padding-right: 0; }
+@media (min-width: 530px){
+  .row > div{
+    padding-right: 40px; } }
 .row > div > div {
     padding-right: 0; }
 @media (min-width: 530px){
@@ -358,6 +363,9 @@ template {
 @media (min-width: 800px){
   .row .columns{
     width: 100%; }
+  .row .md-6{
+    float: left;
+    width: 50%; }
   .row .md-4{
     float: left;
     width: 33.33%; }
@@ -423,8 +431,15 @@ h1, h2, h3, h4, h5, h6 {
 .centered {
   text-align: center; }
 p {
+  font-weight: 300;
   margin: 0 0 20px 0;
   line-height: 1.65; }
+@media (min-width: 530px){
+  p{
+    font-size: 1.125rem; } }
+p a {
+    font-weight: 700;
+    color: #D59541; }
 em {
   font-style: italic; }
 strong {
@@ -510,18 +525,45 @@ section {
 .our-beginning .midle {
   margin: 0 auto;
   max-width: 976px; }
-.generic-content .b-mrgn {
+.b-mrgn {
   margin-bottom: 1.6em; }
+.generic-content .t-mrgn {
+  margin-top: 0; }
 .generic-content .small {
   font-size: 1.3rem; }
 @media (min-width: 530px){
   .generic-content .small{
     font-size: 1.875rem; } }
-p {
-  font-weight: 300; }
+.features ._title ._icon {
+  margin: .2rem auto;
+  width: 3.5rem;
+  display: block; }
 @media (min-width: 530px){
-  p{
-    font-size: 1.125rem; } }
-p a {
-    font-weight: 700;
-    color: #D59541; }
+  .features ._title{
+    font-size: 3.75rem;
+    font-weight: 300; }
+  .features ._title ._icon{
+    width: 3.85rem; } }
+.features-item {
+  padding-bottom: 2.2rem;
+  position: relative; }
+@media (min-width: 530px){
+  .features-item{
+    padding-left: 94px; } }
+.features-item ._icon {
+    display: block;
+    margin: 0 auto; }
+@media (min-width: 530px){
+  .features-item ._icon{
+    position: absolute;
+    left: 0;
+    width: 3.55rem; } }
+.features-item ._item-title {
+    font-size: 1.6rem;
+    margin: .7em 0 1em 0;
+    text-align: center;
+    font-weight: 400; }
+@media (min-width: 530px){
+  .features-item ._item-title{
+    font-size: 1.875rem;
+    text-align: left; } }
