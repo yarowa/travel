@@ -30,6 +30,13 @@
     height: 0;
     visibility: hidden;
 	}
+	& >  div{
+		padding-right: 0;
+		@add-mixin small{
+			
+			padding-right: 40px;
+		}
+	}
 	& >  div > div{
 		padding-right: 0;
 		@add-mixin small{
@@ -41,6 +48,10 @@
 	@add-mixin medium{
 		.columns{
 			width: 100%;
+		}
+		.md-6{
+			float: left;
+			width: 50%;
 		}
 		.md-4{
 			float: left;
