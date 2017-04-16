@@ -18,7 +18,15 @@
 @define-mixin clearfix{
 	
 }
-
+.flexbox{
+	@add-mixin medium {
+		display: flex;
+	}
+	& > .columns{
+		float: none;
+		display: flex;
+	}
+}
 .row{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -32,14 +40,13 @@
 	}
 	& >  div{
 		padding-right: 0;
-		@add-mixin small{
-			
+		@add-mixin medium{
 			padding-right: 40px;
 		}
 	}
 	& >  div > div{
 		padding-right: 0;
-		@add-mixin small{
+		@add-mixin medium{
 			
 			padding-right: 40px;
 		}

@@ -63,10 +63,10 @@ h1, h2, h3, h4, h5, h6{
 
 
 p{
-	//font-size: 0.9rem;
+	font-size: 0.9rem;
 	font-weight: 300;
 	margin: 0 0 20px 0;
-  line-height: 1.65;
+  line-height: 1.5;
 	@add-mixin small{
 		font-size: 1.125rem;
 	}
