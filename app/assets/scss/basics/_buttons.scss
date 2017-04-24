@@ -7,12 +7,22 @@
 	
 	&--orange{
 		background-color: $mainOrange;
+		font-weight: 300;
+
 	}
+
 	&-large{
 		padding: 1.0rem 1.6rem;
 		@add-mixin small{
-	      font-size: 1.25rem;
-	      padding: 1.1rem 1.9rem;
-      }
+      font-size: 1.25rem;
+      padding: 1.1rem 1.9rem;
+    }
 	}
+
+
+}
+
+.ftr-btn{
+	border-radius: 5px;
+	padding: .65rem 1.2rem;
 }

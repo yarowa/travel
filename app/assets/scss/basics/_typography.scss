@@ -1,46 +1,5 @@
 /*  Headings */
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6{
-  font-weight: bold;
-}
-
-.gigantic{
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px;
-}
-.huge, h1{
-  font-size: 4.8rem;
-  font-weight: 300;
-  line-height: 1.05;
-  letter-spacing: -1px;
-}
-.large, h2{
-  font-size: 2.9rem;
-  font-weight: 300;
-  line-height: 1.14;
-}
-.bigger, h3{
-  font-size: 26px;
-  line-height: 1.38;
-}
-.big, h4{
-  font-size: 22px;
-  line-height: 1.38;
-}
-.small{
-  font-size: 0.875rem;
-  //line-height: 1.2;
-  @add-mixin small{
-	  font-size: 1.875rem;
-  }
-  
-}
-
-.light{
-	font-weight: 100;
-}
 
 // Basic Text Style
 
@@ -68,7 +27,7 @@ p{
 	margin: 0 0 20px 0;
   line-height: 1.5;
 	@add-mixin small{
-		font-size: 1.125rem;
+		font-size: 1.1rem;
 	}
 	a{
 		font-weight: 700;
