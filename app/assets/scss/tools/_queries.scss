@@ -16,7 +16,11 @@
 	}
 }
 @define-mixin clearfix{
-	
+	content: ' ';
+  clear: both;
+  display: table;
+  height: 0;
+  visibility: hidden;
 }
 .flexbox{
 	@add-mixin medium {
@@ -32,11 +36,7 @@
 	margin: 0 auto;
 	zoom: 1;
 	&::after {
-    content: ' ';
-    clear: both;
-    display: table;
-    height: 0;
-    visibility: hidden;
+    @add-mixin clearfix;
 	}
 	& >  div{
 		padding-right: 0;

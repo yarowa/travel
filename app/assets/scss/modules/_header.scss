@@ -1,0 +1,31 @@
+header, .site-header{
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  transition: background-color .3s ease-out;
+  @add-mixin medium {
+    background: rgba($light-blue, .3); 
+  }
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
+    transform-origin: 50% 0;
+    background: $light-blue;
+    padding: 25px 35px;
+    @add-mixin medium{
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+  
+  .logo_txt{
+    text-indent: -9999px;
+  }
+}
+
+.expanded{
+  background-color: rgba($light-blue, .55%);
+}
