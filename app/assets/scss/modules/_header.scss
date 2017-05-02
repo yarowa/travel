@@ -1,11 +1,18 @@
-header, .site-header{
+.site-header{
   padding: 10px 0;
   width: 100%;
   position: absolute;
   z-index: 2;
   transition: background-color .3s ease-out;
   @add-mixin medium {
+    position: fixed;
     background: rgba($light-blue, .3); 
+    &.sticky{
+      background-color: rgba(23, 51, 72, .85);
+      .logo{
+        transform: scale(.57);
+      }
+    }
   }
   .logo{
     position: absolute;
@@ -13,6 +20,8 @@ header, .site-header{
     left: 50%;
     transform: translateX(-50%) scale(.8);
     transform-origin: 50% 0;
+    //transition: transform .3s ease-out;
+    transition: all .4s ease-out;
     background: $light-blue;
     padding: 25px 35px;
     @add-mixin medium{

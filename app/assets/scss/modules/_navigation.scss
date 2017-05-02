@@ -24,6 +24,7 @@
   z-index: 1;
   transform: scale(1); 
 }
+
 .menu-icon{
   width: 20px;
   height: 19px;
@@ -120,6 +121,9 @@
             font-size: 1rem;
             padding: 12px 0;
             background-color: transparent;
+            &.current{
+              color: #fabb69;
+            }
           }
         }
       }
