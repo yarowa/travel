@@ -14,8 +14,10 @@ section{
   background-color: #e0e6ef;
   padding-bottom: 0;
   @add-mixin medium {
-    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-    background-size: cover;
+    &.lazyloaded{
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover;
+    }
     padding: 4.5rem 0;
   }
 }

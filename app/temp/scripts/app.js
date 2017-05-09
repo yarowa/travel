@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11286,7 +11286,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jquerySmoothScroll = __webpack_require__(7);
+var _jquerySmoothScroll = __webpack_require__(9);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11302,6 +11302,7 @@ var StickyHeader = function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
+    this.lazyImages = (0, _jquery2.default)(".lazyload");
     this.sticky = (0, _jquery2.default)(".site-header");
     this.headerTrigger = (0, _jquery2.default)("._title");
     this.pageSection = (0, _jquery2.default)(".page-section");
@@ -11309,9 +11310,17 @@ var StickyHeader = function () {
     this.addSmoothScrolling();
     this.headerWaypoint();
     this.createPageSection();
+    this.refreshWaypoints();
   }
 
   _createClass(StickyHeader, [{
+    key: 'refreshWaypoints',
+    value: function refreshWaypoints() {
+      this.lazyImages.on("load", function (event) {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll();
@@ -11370,7 +11379,8 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11405,7 +11415,8 @@ var sticky = new _stickyHeader2.default();
 var modal = new _modal2.default();
 
 /***/ }),
-/* 7 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

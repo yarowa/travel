@@ -513,9 +513,10 @@ section {
   padding-bottom: 0; }
 @media (min-width: 800px){
   .testimonials{
+    padding: 4.5rem 0; }
+  .testimonials.lazyloaded{
     background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
-    background-size: cover;
-    padding: 4.5rem 0; } }
+    background-size: cover; } }
 .site-header {
   padding: 10px 0;
   width: 100%;
